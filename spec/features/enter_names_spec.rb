@@ -1,6 +1,6 @@
 feature 'Entering names' do
   scenario 'Players can enter names' do
-    visit ('/')
-    expect(page).to have_content 'Enter names:'
+    sign_in_and_play
+    expect(page).to have_content 'Faduma vs Ellie'
   end
 end

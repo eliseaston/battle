@@ -5,7 +5,7 @@ describe Player do
   subject(:ellie) {Player.new('Ellie')}
 
   context 'player details' do
-    it 'shows players name' do
+    it 'shows player name' do
       expect(faduma.name).to eq("Faduma")
     end
 
@@ -21,7 +21,7 @@ describe Player do
     end
 
     it 'reduces the player hit points' do
-      expect { faduma.receive_damage}.to change { faduma.hit_points}.by(-10)
+      expect { ellie.receive_damage}.to change { ellie.hit_points}.by(-10)
     end
 
   end

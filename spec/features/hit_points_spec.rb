@@ -1,6 +1,6 @@
 feature "hit points" do
   scenario "see player 2 hit points" do
     sign_in_and_play
-    expect(page).to have_content "Ellie: 60 HP"
+    expect(page).to have_content "Ellie: 60HP"
   end
 end

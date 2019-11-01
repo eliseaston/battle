@@ -9,7 +9,7 @@ feature 'attack' do
     sign_in_and_play
     click_link "Attack!"
     expect(page).not_to have_content "Ellie: 60 HP"
-    expect(page).to have_content "Ellie 50 HP"
+    expect(page).to have_content "Ellie : 50HP"
   end
 
 end
